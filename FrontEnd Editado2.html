@@ -13,8 +13,8 @@
     </header>
     <div class="container-fluid">
 		<div class="row">
-        <div class="col-sm-2">&nbsp;</div>
-		<div class="col-sm-8">
+        <div class="col-sm-5">&nbsp;</div>
+		<div class="col-sm-7">
 		<h3>Parámetros de la instalación</h3>
 		<form>   
             <div class="mb-3">
@@ -31,35 +31,55 @@
                     <option>Trina Solar - Vertex</option>
                 </select>
             </div>          
-                <h4>Parámetros del terreno</h4>                             
-            <input type="text" class="number" placeholder="Ancho del terreno" id="AnchoTerreno" value="" required>
+                    <h4>Parámetros del terreno</h4>  
+                    <div class="mb-2">
+                        <input type="text" class="number" placeholder="Ancho del terreno" id="AnchoTerreno" value="" required>
+                        <br>
+                    </div> 
+                    <div class="mb-2">
+                        <input type="text" placeholder="Largo del terreno" id="LargoTerreno" value="" required>                 
+                        <br>
+                    </div>
+                
+                <h4>Parámetros de la ubicación</h4>      
+                <div class="mb-2">
+                    <input type="text" placeholder="Latitud" id="Latitud" value="" required>
                     <br>
-            <input type="text" placeholder="Largo del terreno" id="LargoTerreno" value="" required>                 
-                    <br>
-            <h4>Parámetros de la ubicación</h4>            
-            <input type="text" placeholder="Latitud" id="Latitud" value="" required>
-                    <br>
-            <input type="text" placeholder="Longitud" id="Longitud" value="" required>
-                    <br>
-            <h4>Parámetros de la posición</h4>
-            <label for="Azimuth">Azimuth</label>"
-            <input type="number" placeholder="180" id="Azimuth" min="0" max="359" required>
-                    <br>
-            <label for="AnguloInclinacion">Inclinación</label required>
-                <select>
-                    <option>15º</option>
-                    <br>
-                    <option>30º</option>
-                </select>    
-                    <br>
-            <input type="radio" id="Tejado" name="Montaje" class="custom-control-input" value="true" >
-            <label class="custom-control-label" for="Tejado">Montaje sobre tejado</label >
-                    <br>
-            <input type="radio" id="Estructura" name="Montaje" class="custom-control-input">
-            <label class="custom-control-label" for="Estructura">Montaje sobre estructura</label > 
-                    <br>    
-            <input type="submit" value="Calcular">
-        </form>
+                </div>      
+                
+                <input type="text" placeholder="Longitud" id="Longitud" value="" required>
+                        <br>
+                                           
+                
+                <h4>Parámetros de la posición</h4>
+                <div class="mb-2">
+                    <label for="Azimuth">Azimuth</label>
+                <input type="number" placeholder="180" id="Azimuth" min="0" max="359" required>
+                        <br>
+                </div>
+                <div class="mb-2">
+                    <label for="AnguloInclinacion">Inclinación</label required>
+                        <select>
+                            <option>15º</option>
+                            <br>
+                            <option>30º</option>
+                        </select>    
+                            <br>
+                </div>
+                <div class="mb-2">
+                    <input type="radio" id="Tejado" name="Montaje" class="custom-control-input" value="true" >
+                    <label class="custom-control-label" for="Tejado">Montaje sobre tejado</label >
+                            <br>
+                </div>
+                
+                <input type="radio" id="Estructura" name="Montaje" class="custom-control-input">
+                <label class="custom-control-label" for="Estructura">Montaje sobre estructura</label > 
+                        <br>    
+                <div class="mt-3">
+                    <input type="submit" value="Calcular">
+                </div>
+                
+            </form>
 		</div>		
 		<div class="col-sm-2">&nbsp;</div>
 		</div>
